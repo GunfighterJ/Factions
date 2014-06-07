@@ -52,8 +52,8 @@
         </dependency>
         <dependency>
         	<groupId>com.massivecraft</groupId>
-        	<artifactId>mcore</artifactId>
-        	<version>7.2.0</version>
+        	<artifactId>massivecore</artifactId>
+        	<version>7.2.1</version>
         </dependency>
         <dependency>
             <groupId>com.dthielke</groupId>
