@@ -3,9 +3,9 @@ package com.massivecraft.factions.event;
 import org.bukkit.command.CommandSender;
 
 import com.massivecraft.factions.entity.UPlayer;
-import com.massivecraft.mcore.event.MCoreEvent;
+import com.massivecraft.massivecore.event.EventMassiveCore;
 
-public abstract class FactionsEventAbstractSender extends MCoreEvent
+public abstract class EventFactionsAbstractSender extends EventMassiveCore
 {
 	// -------------------------------------------- //
 	// FIELDS
@@ -19,7 +19,7 @@ public abstract class FactionsEventAbstractSender extends MCoreEvent
 	// CONSTRUCT
 	// -------------------------------------------- //
 	
-	public FactionsEventAbstractSender(CommandSender sender)
+	public EventFactionsAbstractSender(CommandSender sender)
 	{
 		this.sender = sender;
 	}

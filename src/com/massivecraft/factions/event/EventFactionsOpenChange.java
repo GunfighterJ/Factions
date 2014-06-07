@@ -4,9 +4,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.event.HandlerList;
 
 import com.massivecraft.factions.entity.Faction;
-import com.massivecraft.mcore.ps.PS;
 
-public class FactionsEventHomeChange extends FactionsEventAbstractSender
+public class EventFactionsOpenChange extends EventFactionsAbstractSender
 {	
 	// -------------------------------------------- //
 	// REQUIRED EVENT CODE
@@ -23,19 +22,19 @@ public class FactionsEventHomeChange extends FactionsEventAbstractSender
 	private final Faction faction;
 	public Faction getFaction() { return this.faction; }
 	
-	private PS newHome;
-	public PS getNewHome() { return this.newHome; }
-	public void setNewHome(PS newHome) { this.newHome = newHome; }
+	private boolean newOpen;
+	public boolean isNewOpen() { return this.newOpen; }
+	public void setNewOpen(boolean newOpen) { this.newOpen = newOpen; }
 	
 	// -------------------------------------------- //
 	// CONSTRUCT
 	// -------------------------------------------- //
 	
-	public FactionsEventHomeChange(CommandSender sender, Faction faction, PS newHome)
+	public EventFactionsOpenChange(CommandSender sender, Faction faction, boolean newOpen)
 	{
 		super(sender);
 		this.faction = faction;
-		this.newHome = newHome;
+		this.newOpen = newOpen;
 	}
 	
 }
